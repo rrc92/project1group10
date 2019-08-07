@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8">
+ <title></title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+</head>
+
+<body>
+ <div class="container">
+   <h1></h1>
+
+   <!-- This form will be where users input data about the movies -->
+   <form>
+     <label></label>
+     <input><br>
+
+     <!-- This button will trigger our AJAX call -->
+     <input>
+   </form>
+
+   <!-- We'll be dumping our JSON contents in here -->
+   <div></div>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script type="text/javascript">
+   var url = "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8/1/0/0.mvt?access_token=pk.eyJ1IjoicHNoZWlrIiwiYSI6ImNqejBvdGduMTA3dDYzbW5obWQ4b3lhNXQifQ.C4I4aDLBg61egG2Tylwf9g"
+   var endpoint = "/v4/{tileset_id}/{zoom}/{x}/{y}{@2x}.{format}"
+$.ajax({
+url: url + endpoint,
+method: "GET"
+}).then( function(response){
+   console.log(response)
+})
+
+   </script>
+ </div>
+</body>
+
+</html>
