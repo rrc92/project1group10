@@ -1,0 +1,42 @@
+body {
+    background-image: url("../images/barbackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
+
+#header {
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    height: 100px;
+    width: 600px;
+    padding-top: 44px;
+    background: #74A1AC;
+    margin: auto;
+    margin-bottom: 100px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+#beerBtn {
+    margin-bottom: 20px;
+    height: 100px;
+    width: 400px;
+    border-radius: 5px;
+    font-size: 24px;
+    color:black;
+}
+
+#cocktailBtn {
+    height: 100px;
+    width: 400px;
+    border-radius: 5px;
+    font-size: 24px;
+    color:black;
+}
+
+#buttonHolder {
+    text-align: center;
+}
