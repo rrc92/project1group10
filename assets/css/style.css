@@ -24,19 +24,35 @@ body {
     margin-bottom: 20px;
     height: 100px;
     width: 400px;
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 24px;
-    color:black;
+    color:#461D1F;
+    background-color:#EDB46F;
 }
 
 #cocktailBtn {
     height: 100px;
     width: 400px;
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 24px;
-    color:black;
+    color:#461D1F;
+    background-color:#EDB46F;
 }
 
 #buttonHolder {
     text-align: center;
+}
+
+#searchBeer {
+    margin-bottom: 20px;
+    height: 50px;
+    width: 300px;
+    font-size: 24px;
+}
+
+#searchCocktail {
+    margin-bottom: 20px;
+    height: 50px;
+    width: 300px;
+    font-size: 24px;
 }
