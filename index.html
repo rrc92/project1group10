@@ -1,42 +1,46 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
- <meta charset="utf-8">
- <title></title>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+  <meta charset="UTF-8">
+  <title>Buzztime Search!</title>
+  <link href="assets/css/reset.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
- <div class="container">
-   <h1></h1>
+  <header>
+    <h1 id=header>Buzztime Search!</h1>
+  </header>
 
-   <!-- This form will be where users input data about the movies -->
-   <form>
-     <label></label>
-     <input><br>
+  <div id=buttonHolder>
 
-     <!-- This button will trigger our AJAX call -->
-     <input>
-   </form>
+    <div>
+      <form>
+        <div class="form-group">
 
-   <!-- We'll be dumping our JSON contents in here -->
-   <div></div>
+          <label for="Info Adder"></label>
+          <input type="text" class="form-control" id="searchBeer">
+        </div>
+        <button type="submit" class="btn-primary" id="beerBtn">Search Beers</button>
 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   <script type="text/javascript">
-   var url = "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8/1/0/0.mvt?access_token=pk.eyJ1IjoicHNoZWlrIiwiYSI6ImNqejBvdGduMTA3dDYzbW5obWQ4b3lhNXQifQ.C4I4aDLBg61egG2Tylwf9g"
-   var endpoint = "/v4/{tileset_id}/{zoom}/{x}/{y}{@2x}.{format}"
-$.ajax({
-url: url + endpoint,
-method: "GET"
-}).then( function(response){
-   console.log(response)
-})
+      </form>
 
-   </script>
- </div>
+      <form>
+        <div class="form-group">
+
+          <label for="Info Adder"></label>
+          <input type="text" class="form-control" id="searchCocktail">
+        </div>
+
+        <button type="submit" class="btn-primary" id="cocktailBtn">Search Cocktails</button>
+      </form>
+
+      <div>
+      </div>
+
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 
 </html>

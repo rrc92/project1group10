@@ -1,0 +1,58 @@
+body {
+    background-image: url("../images/barbackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
+
+#header {
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    height: 100px;
+    width: 600px;
+    padding-top: 44px;
+    background: #74A1AC;
+    margin: auto;
+    margin-bottom: 100px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+#beerBtn {
+    margin-bottom: 20px;
+    height: 100px;
+    width: 400px;
+    border-radius: 15px;
+    font-size: 24px;
+    color:#461D1F;
+    background-color:#EDB46F;
+}
+
+#cocktailBtn {
+    height: 100px;
+    width: 400px;
+    border-radius: 15px;
+    font-size: 24px;
+    color:#461D1F;
+    background-color:#EDB46F;
+}
+
+#buttonHolder {
+    text-align: center;
+}
+
+#searchBeer {
+    margin-bottom: 20px;
+    height: 50px;
+    width: 300px;
+    font-size: 24px;
+}
+
+#searchCocktail {
+    margin-bottom: 20px;
+    height: 50px;
+    width: 300px;
+    font-size: 24px;
+}
