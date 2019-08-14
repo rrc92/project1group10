@@ -22,7 +22,7 @@
                       <label for="Info Adder"></label>
                       <input type="text" class="form-control" id="searchBeer">
                     </div>
-                    <button type="submit" class="btn-primary" id="beerBtn">Search Beers</button>
+                    <button type="button" class="btn-primary" id="beerBtn">Search Beers</button>
 
                 </form>
 
@@ -33,14 +33,24 @@
                       <input type="text" class="form-control" id="searchCocktail">
                     </div>
                     
-                <button type="submit" class="btn-primary" id="cocktailBtn">Search Cocktails</button>
+                <button type="button" class="btn-primary" id="cocktailBtn">Search Cocktails</button>
                 </form>
 
             <div>
     </div>
 
+    <div class="pageCounter">
+        <span>Buzztime has been used to search</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+        <span id="number"></span> 
+        <span>times</span>
+    </div>
     <script src="https://code.jquery.com/jquery.js"></script>
-    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script type="text/javascript" src="assets/javascript/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+
+    
 </body>
 
 </html>
