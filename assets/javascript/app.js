@@ -38,7 +38,7 @@ $.ajax({
    url: baryelp,
    headers: {
     'Authorization':'Bearer a5V6v3a0l3zSAXVyVOK9yUkZyg04FGiIhQTAegpoRGZVP7lkSms1xy5KZ4H9tQhQ-0C7LmbMNdXJ6TB6sjrqijknafCpDt2KYzHkG19N3XkoRtqLXLxNlyj38gZVXXYx',
-},                  //change api key, sign up on yelp to retrieve one //
+},                  
    method: 'GET',
    
    success: function(data){
