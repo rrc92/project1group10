@@ -1,5 +1,6 @@
 // Cocktail API from cocktail DB
- 
+ var ck;
+ var rr;
 $('#cocktailBtn').on('click', function(){
   $('#cocktail').text("");
     var search_textcocktail = $('#searchCocktail').val();
@@ -14,8 +15,8 @@ $('#cocktailBtn').on('click', function(){
     }).then(function(response) {
       var rr=response.drinks[0].strDrink;
     // var cktlname = JSON.stringify(response);
-    var cockimg=response.drinks[0].strDrinkThumb;
-    var ck= $("<img id="+"foto"+" src="+cockimg+">");
+    cockimg=response.drinks[0].strDrinkThumb;
+    ck= $("<img id="+"foto"+" src="+cockimg+">");
      
     $('#cocktail').append(ck,rr);
     
@@ -57,6 +58,17 @@ $.ajax({
 }
  
  
+
+// db.ref().push({
+
+// bars:bar,
+// coctail:ck,
+// image:rr,
+// nane:"dtdtdt"
+
+
+
+// })
   
  
 
