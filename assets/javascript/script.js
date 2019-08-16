@@ -1,5 +1,32 @@
+var firebaseConfig = {
+  apiKey: "AIzaSyCuCG3hXXQViilWcp1iUDTqVm_A3kadoB0",
+  authDomain: "buzztime-97cbd.firebaseapp.com",
+  databaseURL: "https://buzztime-97cbd.firebaseio.com",
+  projectId: "buzztime-97cbd",
+  storageBucket: "",
+  messagingSenderId: "756019227674",
+  appId: "1:756019227674:web:c2886c7b74a5e8d7"
+};
+
+
+var clickCounter = 0;
+firebase.initializeApp(firebaseConfig);
+
+var database = firebase.database();
+
+$(".btn-primary").on("click", function () {
+  clickCounter++;
+  $("#number").text(clickCounter);
+  database.ref("click_counter").push({
+    name: "click_counter"
+  });
+
+
+});
+
 // Cocktail API from cocktail DB
- var ck;
+
+var ck;
  var rr;
 $('#cocktailBtn').on('click', function(){
   $('#cocktail').text("");
@@ -29,8 +56,9 @@ $('#cocktailBtn').on('click', function(){
 
 
 
+
 // Bar search from Yelp API 
- var bar=[];
+var bar=[];
  
 function bartime(){
       var baryelp = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=bar&limit=5&location=San francisco";
@@ -56,10 +84,32 @@ $.ajax({
 }
 });
 }
- 
- 
 
-// db.ref().push({
+function usertime(){
+  var userIPtime = "http://worldtimeapi.org/api/ip"
+  console.log(userIPtime)
+
+}
+
+var lTime = []
+function countdown() {
+      var localdatetime = "http://worldtimeapi.org/api/ip";
+
+      $.ajax({
+        url: localdatetime,
+        method: 'GET',
+
+        success: function (data) {
+          console.log(data);
+
+          console.log(data.datetime.substring(11,19));
+
+
+        }
+    })
+  }
+
+  // db.ref().push({
 
 // bars:bar,
 // coctail:ck,
@@ -69,7 +119,3 @@ $.ajax({
 
 
 // })
-  
- 
-
-
