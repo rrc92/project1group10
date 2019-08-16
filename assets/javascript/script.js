@@ -1,29 +1,3 @@
-$('#beerBtn').on('click', function () {
-  event.preventDefault();
-
-  var beerSearch = {
-    "api-key": 'a8f6c358f10c7a5db840633a6ea304f9',
-  }
-
-  var url = "https://cors-anywhere.herokuapp.com/https://sandbox-api.brewerydb.com/v2/"
-  var key = "key=a8f6c358f10c7a5db840633a6ea304f9"
-  var endpoint = "beer/WHQisc/ingredients/?"
-
-
-  url = "https://cors-anywhere.herokuapp.com/https://sandbox-api.brewerydb.com/v2/" + $.param(beerSearch)
-
-  $.ajax({
-    url: url + endpoint + key,
-    method: "GET"
-  }).then(function (response) {
-    console.log(response)
-  })
-
-});
-
-
-// ================================================================================
-
 var firebaseConfig = {
   apiKey: "AIzaSyCuCG3hXXQViilWcp1iUDTqVm_A3kadoB0",
   authDomain: "buzztime-97cbd.firebaseapp.com",
@@ -50,7 +24,6 @@ $(".btn-primary").on("click", function () {
 
 });
 
-
 // Cocktail API from cocktail DB
 
 $('#cocktailBtn').on('click', function (event) {
@@ -70,8 +43,8 @@ $('#cocktailBtn').on('click', function (event) {
     console.log(response)
     var rr = response.drinks[0].strDrink;
     // var cktlname = JSON.stringify(response);
-    var ctimg = response.drinks[0].strDrinkThumb;
-    var ck = $("<img id=" + "foto" + " src=" + ctimg + ">");
+    var cocktailImg = response.drinks[0].strDrinkThumb;
+    var ck = $("<img id=" + "foto" + " src=" + cocktailImg + ">");
 
     $('#cocktail').append(ck, rr);
 
@@ -131,6 +104,6 @@ function countdown() {
           console.log(data.datetime.substring(11,19));
 
 
-        }-
+        }
     })
   }
