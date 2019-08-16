@@ -14,21 +14,23 @@ body {
     width: 600px;
     padding-top: 44px;
     background: #74A1AC;
-    margin: auto;
     margin-bottom: 100px;
     border-radius: 5px;
     margin-top: 50px;
     border: 2px solid white;
+    margin-left: 420px;
+
 }
 
 #beerBtn {
-    margin-bottom: 20px;
     height: 100px;
     width: 400px;
     border-radius: 3px;
     font-size: 24px;
     color:#461D1F;
     background-color:#EDB46F;
+    margin-left: 527px;
+    margin-bottom: 20px;
 }
 
 #cocktailBtn {
@@ -38,6 +40,8 @@ body {
     font-size: 24px;
     color:#461D1F;
     background-color:#EDB46F;
+    margin-left: 527px;
+    margin-bottom: 20px;
 }
 
 #buttonHolder {
@@ -49,6 +53,7 @@ body {
     height: 50px;
     width: 300px;
     font-size: 24px;
+    margin-left: 574px;
 }
 
 #searchCocktail {
@@ -56,6 +61,8 @@ body {
     height: 50px;
     width: 300px;
     font-size: 24px;
+    margin-right: 20px;
+    margin-left: 574px;
 }
 
 .pageCounter {
@@ -63,10 +70,31 @@ body {
     width: 355px;
     color: white;
     background-color: #74A1AC;
-    text-align: center;
-    margin: auto;
     margin-top: 20px;
+    text-align: center;
     border-radius: 2px;
     padding-left: 0.2px;
     border: 1px solid white;
+    margin-left: 548px;
+    margin-bottom: 20px;
+}
+
+p{
+    width: 300px;
+    height: 500px;
+    background: white;
+    position: absolute;
+    margin: 0 0 0 150px;
+}
+#yelploc {
+    width: 300px;
+    height: 500px;
+    background: white;
+    position: absolute;
+    margin: 0 0 0 1000px;
+    
+}
+
+#foto{
+    width: 100px;
 }
