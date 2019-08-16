@@ -49,4 +49,61 @@ $('#cocktailBtn').on('click', function (event) {
     $('#cocktail').append(ck, rr);
 
   });
+  $("#yelploc").text(ctimg);
+
+  bartime();
 });
+
+
+
+// Bar search from Yelp API 
+var bar = [];
+
+function bartime() {
+  var baryelp = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=bar&limit=5&location=San francisco";
+
+  $.ajax({
+    url: baryelp,
+    headers: {
+      'Authorization': 'Bearer a5V6v3a0l3zSAXVyVOK9yUkZyg04FGiIhQTAegpoRGZVP7lkSms1xy5KZ4H9tQhQ-0C7LmbMNdXJ6TB6sjrqijknafCpDt2KYzHkG19N3XkoRtqLXLxNlyj38gZVXXYx',
+    },                  //change api key, sign up on yelp to retrieve one //
+    method: 'GET',
+
+    success: function (data) {
+      console.log(data);
+      for (var i = 0; i < 5; i++) {
+        bar.push(data.businesses[i].name);
+        bar.push(data.businesses[i].location.address1);
+
+      }
+
+      $("#yelploc").text(bar);
+
+
+    }
+  });
+}
+
+function usertime(){
+  var userIPtime = "http://worldtimeapi.org/api/ip"
+  console.log(userIPtime)
+
+}
+
+var lTime = []
+function countdown() {
+      var localdatetime = "http://worldtimeapi.org/api/ip";
+
+      $.ajax({
+        url: localdatetime,
+        method: 'GET',
+
+        success: function (data) {
+          console.log(data);
+
+          console.log(data.datetime.substring(11,19));
+
+
+        }
+    })
+  }
