@@ -59,8 +59,7 @@ $('#cocktailBtn').on('click', function(){
 
 // Bar search from Yelp API 
 var bar=[];
- 
-function bartime(){
+var addr1 =[];function bartime(){
       var baryelp = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=bar&limit=5&location=San francisco";
       
 $.ajax({
@@ -79,6 +78,7 @@ $.ajax({
       }
         
    $("#yelploc").text(bar);
+   
  
       
 }
