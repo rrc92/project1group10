@@ -12,25 +12,14 @@ body {
     font-size: 48px;
     height: 100px;
     width: 600px;
-    padding-top: 44px;
     background: #74A1AC;
     margin-bottom: 100px;
     border-radius: 5px;
     margin-top: 50px;
     border: 2px solid white;
     margin-left: 420px;
+    font-family: 'Lexend Zetta', sans-serif;
 
-}
-
-#beerBtn {
-    height: 100px;
-    width: 400px;
-    border-radius: 3px;
-    font-size: 24px;
-    color:#461D1F;
-    background-color:#EDB46F;
-    margin-left: 527px;
-    margin-bottom: 20px;
 }
 
 #cocktailBtn {
@@ -42,18 +31,11 @@ body {
     background-color:#EDB46F;
     margin-left: 527px;
     margin-bottom: 20px;
+    font-family: 'Lexend Zetta', sans-serif;
 }
 
-#buttonHolder {
+#br {
     text-align: center;
-}
-
-#searchBeer {
-    margin-bottom: 20px;
-    height: 50px;
-    width: 300px;
-    font-size: 24px;
-    margin-left: 574px;
 }
 
 #searchCocktail {
@@ -85,16 +67,26 @@ p{
     background: white;
     position: absolute;
     margin: 0 0 0 150px;
+    border-radius: 30px;
+    background-color: #996633;
+    font-family: 'Lexend Zetta', sans-serif;
 }
+
 #yelploc {
     width: 300px;
     height: 500px;
     background: white;
     position: absolute;
     margin: 0 0 0 1000px;
+    border-radius: 30px;
+    background-color: #996633;
+    text-align: center;
+    font-family: 'Lexend Zetta', sans-serif;
     
 }
 
 #foto{
     width: 100px;
+    border-radius: 30px;
+    margin: 30px 0 0 0;
 }
